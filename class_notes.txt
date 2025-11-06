@@ -152,3 +152,18 @@ Vercel is an ideal platform for deploying Next.js apps as it offers automated, o
 Deploying Next js app into Vercel using github
 --------------------------------------------------
 1. Create a github account and create a repository
+
+2. from local repo these commands helps to push the code 
+
+git init
+git add .
+git commit -m "init"
+git branch -M main
+git remote add origin <your-github-repo-url>
+git push -u origin main
+
+
+note:please generate PAT personal access token from settings ---> developer settings --> Generate a new token (classic recommended) while generating the token please checkmark repo (full control of private repositories)
+workflow (to push to workflows) Generate the token and copy it immediately and save it
+
+once pushed again git push -u origin main with PAT token code will be pushed to remote repository
